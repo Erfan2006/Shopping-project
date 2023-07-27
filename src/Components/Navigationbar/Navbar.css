@@ -21,13 +21,14 @@
 
 .Navbar a:hover{
 
-  border-bottom: solid rgb(34, 219, 188);
+  border-bottom: solid rgb(111, 228, 212);
 
 }
 
 
 .Navbar{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(240, 234, 234);
+  border-bottom: 2px solid rgb(221, 211, 211);
   height: 80px;
   width: 100%;
   position: fixed;

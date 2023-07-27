@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import LoginImage from './../../../images/LoginImg.svg'
+import LoginImage from "./../images/LoginImg.svg"
+
 import "./Login.css";
 
 function Login() {
@@ -31,7 +32,16 @@ function Login() {
       .catch((error) => {
         setError("An error occurred while logging in");
       });
+
+      // Redirect to the Sign up page 
+
+      document.getElementById("Sign-up").addEventListener("click", function() {
+        window.location.href = "/Signup";
+      });
   }
+
+
+  
 
   return (
     <div className="login-container">
@@ -92,7 +102,7 @@ function Login() {
 
            </div>
           </div>
-          <p className="sign-up-massage"> Do not have an account ? <Link className="sign-up" href="./"> Sign up here ! </Link> </p>
+          <p className="sign-up-massage"> Do not have an account ? <Link className="sign-up" id="Sign-up" to="./Signup" > Sign up here ! </Link> </p>
         </div>
       </div>
     </div>

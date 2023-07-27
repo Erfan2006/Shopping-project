@@ -1,5 +1,5 @@
 .Home{
-    background-color: rgb(161, 247, 218);
+    background-color: rgb(250, 255, 253);
     display: flex;
     height: 800px;
     padding-top: 85px;
@@ -76,7 +76,7 @@ h2{
 
 
     .Home{
-        background-color: rgb(161, 247, 218);
+        background-color: rgb(244, 255, 251);
         display: flex;
         height: 630px;
         width: 962px;
@@ -112,7 +112,7 @@ h2{
     @media screen and (max-width: 767px) {
         
         .Home{
-            background-color: rgb(161, 247, 218);
+            background-color: rgb(255, 255, 255);
             display: flex;
             height: 500px;
             width: 962px;

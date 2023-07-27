@@ -1,5 +1,5 @@
 import './AboutCenter.css'
-import image from './../../images/main-3.svg'
+import image from './../images/main-3.svg'
 import { motion } from 'framer-motion';
 
 const AboutCenter = () => {
