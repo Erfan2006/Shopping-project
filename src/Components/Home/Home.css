@@ -4,7 +4,7 @@
     height: 800px;
     padding-top: 85px;
     position: relative;
-    border-bottom: 3px solid black;
+
 }
 
 .Home .Container h1{
@@ -109,35 +109,27 @@ h2{
 
 
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 918px) {
         
         .Home{
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(250, 255, 253);
             display: flex;
-            height: 500px;
-            width: 962px;
+            height: 600px;
             padding-top: 85px;
             position: relative;
             border-bottom: 3px solid black;
         }
 
-
-        .Home .Header{
-            height: 490px;
-            left: 22%;
+        
         }
+        
+        @media screen and (max-width: 767px) {
+        /* start of medium tablet styles */
         
         }
         
         @media screen and (max-width: 479px) {
-    
-
-            .Home .Header{
-                height: 490px;
-                left: 23%;
-                margin: 0;
-            }
-
+        /* start of phone styles */
         
         }
 

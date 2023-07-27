@@ -1,14 +1,18 @@
 import {motion} from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+
 const NavLinks = (props) => {
 
 
     const animateFrom = {opacity: 0, y: -80}
     const animateTo = {opacity: 1, y: 0}
-
-
     return ( 
+
+<div>
+
+<h3 className='title'>Shopping Center</h3>
+
     <ul>
 
         <motion.li
@@ -47,6 +51,7 @@ const NavLinks = (props) => {
         </motion.li>  
 
     </ul> 
+</div>
      );
 }
  

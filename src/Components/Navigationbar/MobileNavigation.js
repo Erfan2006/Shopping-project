@@ -7,7 +7,6 @@ const MobileNavigation = () => {
 
     const [open , setOpen ] = useState(false);
 
-
     const hamburgerIcone = <CgMenuLeft className="Hamburger" size="50px" color="white" onClick={() => setOpen(!open)} />;
     const closeIcone = <CgCloseO className="Hamburger" size="50px" color="white" onClick={() => setOpen(!open)} />;
 
@@ -19,6 +18,7 @@ const MobileNavigation = () => {
         <nav className="MobileNavigation">
             {open ? closeIcone : hamburgerIcone}
             {open && <NavLinks isMobile={true} CloseMobileMenu={CloseMobileMenu} />}
+            {open ? closeIcone : hamburgerIcone}
         </nav> 
     );
 }

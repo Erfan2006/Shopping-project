@@ -1,3 +1,18 @@
+
+
+.title{
+  position: absolute;
+  left: 120px;
+  font-size: 20px;
+}
+
+
+.cart{
+  position: fixed;
+  right: 150px;
+}
+
+
 .Navbar nav ul{
 
   list-style: none;
@@ -51,7 +66,6 @@
 
   }
 
-  
 
   .Navbar .MobileNavigation {
     display: flex;
@@ -62,8 +76,13 @@
   .Navbar .MobileNavigation .Hamburger{
 
     position: absolute;
-    right: 5%;
+    margin-left: 280px;
     cursor: pointer;
+  }
+
+  .Navbar .MobileNavigation .cart{
+    position: absolute;
+    margin-right: 200px;
   }
 
   /* Custom the Hamburger menu  */
@@ -82,7 +101,11 @@
 
   .Navbar nav ul li {
 
-    padding-left: 15%;
+    padding-left: 435px;
+  }
+  .title{
+    left: 400px;
+    margin-top: -15px;
   }
 
   .Navbar{
@@ -98,6 +121,11 @@
     color: #000000 ;
   }
 
+
+  @media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    
+    }
 
   
   
