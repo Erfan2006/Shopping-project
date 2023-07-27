@@ -1,0 +1,104 @@
+.Navbar nav ul{
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.Navbar nav ul li {
+
+  display: inline-block;
+  margin: 20px;
+  
+}
+
+.Navbar a{
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+
+.Navbar a:hover{
+
+  border-bottom: solid rgb(34, 219, 188);
+
+}
+
+
+.Navbar{
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.Navbar .MobileNavigation{
+  display: none;
+}
+
+@media (max-width: 990px){
+  .Navbar .Navigation{
+    display: none;
+
+  }
+
+  
+
+  .Navbar .MobileNavigation {
+    display: flex;
+    background: rgb(17, 16, 16);
+    align-items: center;
+  }
+
+  .Navbar .MobileNavigation .Hamburger{
+
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  /* Custom the Hamburger menu  */
+
+  .Navbar nav ul {  
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+    border-top: 2px solid white;
+  }
+
+
+  .Navbar nav ul li {
+
+    padding-left: 15%;
+  }
+
+  .Navbar{
+    opacity: 1;
+  }
+
+  
+  /* hover a tag */
+
+  .Navbar a:hover{
+
+    border-bottom: none;
+    color: #000000 ;
+  }
+
+
+  
+  
+
+}

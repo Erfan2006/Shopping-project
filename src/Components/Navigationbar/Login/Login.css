@@ -1,0 +1,373 @@
+body{
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+.signin-content{
+
+    width: 100%;
+    position: center;
+ 
+
+}
+
+.signin-image{
+
+    width: 50%;
+    float: left;
+}
+
+.signin-form{
+
+    width: 50%;
+    float: right;
+    margin-top: 85px;
+
+}
+
+
+
+.signin-image{
+
+    margin-top: 110px;
+
+}
+
+
+.form-title {
+    font-size: 48px;
+    justify-content: center;
+    text-align: center;
+}
+
+.Login-form{
+    display: grid;
+    justify-content: center;
+}
+
+input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+  input:focus { outline:none; }
+
+  label 				 {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+
+  input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+  }
+
+  /* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:1px; 
+  width: 0px;
+  bottom:0.8px; 
+  position:absolute;
+  background:#13BF9A; 
+  transition:0.4s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+
+.input-label{
+    margin-top: 15px;
+}
+
+
+
+.submit-btn{
+    height: 28px;
+    margin-top: 28px;
+}
+
+
+.submit-btn {
+    display: grid;
+    height: 40px;
+    background-color: #13BF9A;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000000;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #13BF9A;
+    box-shadow: none;
+  }
+
+  .error{
+
+    margin-left: 280px;
+    color: red;
+
+  }
+
+  .social-lable{
+
+    display: grid;
+    justify-content: center;
+    margin-top: 18px;
+  }
+
+  /* GOOGLE  */
+
+  .login-container-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 16px;
+  }
+  
+  .google-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d32626;
+    color: #757575;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+    transition: box-shadow 0.2s ease-out;
+    text-decoration: none;
+  }
+  
+  .google-button:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .btn-google-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg");
+    background-size: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .google-button span {
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;
+  }
+
+  /* FACEBOOK  */
+
+  .login-container-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 7px;
+  }
+  
+  .facebook-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e4bd6;
+    color: #757575;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(241, 241, 241, 0.25);
+    padding: 10px 20px;
+    transition: box-shadow 0.2s ease-out;
+    text-decoration: none;
+  }
+  
+  .facebook-button:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .btn-facebook-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/facebook.svg");
+    background-size: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .facebook-button span {
+    margin-left: 10px;
+    color: white;
+    font-size: 14px;
+  }
+  
+
+  /* Sign UP */
+  
+  .sign-up-massage{
+
+    width: 100%;
+    font-size: 15px;
+    margin-left: 325px;
+    margin-top: 20px;
+    
+  }
+
+  .sign-up{
+
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #3b5998;
+  
+  }
+
+
+
+
+  @media only screen and (max-width: 768px) {
+
+
+    .signin-image{
+      display: none;
+    }
+
+    .facebook-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .facebook-button img {
+      height: 20px;
+    }
+
+    .sign-up-massage{
+      margin-left: 200px;
+    }
+  }
+  
+  /* @media only screen and (max-width: 768px) {
+
+
+    .signin-image{
+      display: none;
+    }
+
+    .google-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .google-button img {
+      height: 20px;
+    }
+  } */
+  
+
+
+
+  /* @media screen and (max-width: 991px) {
+
+
+    .signin-image{
+      display: none;
+    }
+    .signin-form{
+      width: 100%;
+    }
+    .form-title{
+      width: 100%;
+    }
+    .Login-form{
+      width: 100%;
+    }
+    .socials{
+      width: 100%;
+    }
+    .btn-google{
+      position: fixed;
+      width: 20%;
+      height: 24px;
+      margin-left: 390px;
+
+    }
+    .btn-facebook{
+      position: fixed;
+      width: 20%;
+      height: 24px;
+      margin-left: 475px;
+    }
+    .sign-up-massage{
+      width: 100%;
+      margin-top: 150px;
+    }
+    }
+    
+    @media screen and (max-width: 767px) {
+
+      
+      
+    }
+    
+    @media screen and (max-width: 479px) {
+
+    
+    }
+
+  
+  
+ */
+
+  

@@ -1,0 +1,118 @@
+.About__Center{
+
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+    height: 700px;
+    padding-top: 85px;
+    border-bottom: 3px solid black;
+    
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Lilita One', cursive;
+    
+}
+
+.col_1{
+
+    height: 800px;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: flex-start;
+    width: 50%;
+    float: left;
+}
+
+.col_1 img{
+
+    height: 662px;
+    padding-left: 80px;
+}
+
+
+/* .col_2{
+
+    height: 800px;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right; 
+    align-content: flex-end;
+    width: 50%;
+    float: right;
+} */
+
+
+
+.col_2 h2{
+    font-size: 27px;
+    right: 50%;
+    justify-content: right;
+    margin-right: 0;
+    padding-right: 0;
+
+}
+
+@media screen and (max-width: 991px) {
+    h1{
+        font-size: 40px;
+        font-family: 'Lilita One', cursive;   
+    }
+    .About__Center{
+        height: 380px;
+        border-bottom: 3px solid black;
+    }
+    .col_1 img{
+        display: flex;
+        height: 356px;
+        padding-left: 0.1px;
+
+    }    
+    .col_2 h2{
+        font-size: 16px; 
+ 
+    }
+        
+
+    }
+    
+    @media screen and (max-width: 767px) {
+        
+        .col_1 h1{
+            font-size: 40px;
+            font-family: 'Lilita One', cursive;   
+            padding-left: 400px;
+            
+        }
+        .About__Center{
+            height: 380px;
+            border-bottom: 3px solid black;
+        }
+        .col_1 img{
+            display: flex;
+            height: 355px;
+            padding-left: 0.1px;
+    
+        }    
+        .col_2 h2{
+            font-size: 16px; 
+     
+        }
+
+        
+        
+    
+    }
+    
+    @media screen and (max-width: 479px) {
+    /* start of phone styles */
+    
+    }
+        
+
+

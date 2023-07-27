@@ -1,0 +1,74 @@
+.Button{
+
+  background-color: #ad0909; 
+  border: none;
+  color: white;
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px; 
+  cursor: default;
+  border-radius: 15px;
+}
+
+
+.blog-preview{
+
+  text-align: center;
+  font-size: 24px;
+  border-top: 2px solid #ee0000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.blog-preview:hover {
+
+  box-shadow: 1px 1px 1px  rgb(19, 19, 19);
+}
+
+
+.loader {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  animation: spin 0.6s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 5px #1e252e;
+}
+
+.my-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.my-input:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 5px #0077ff;
+}

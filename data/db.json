@@ -1,0 +1,18 @@
+{
+    "blogs":[
+        {
+            "title":"My first Blog is This",
+            "body": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "author": "Erfan",
+            "id": 1
+
+        },
+
+        {
+            "title":"Opening party",
+            "body":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+            "author": "Ali",
+            "id": 2 
+        }
+    ]
+}
