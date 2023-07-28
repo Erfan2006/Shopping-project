@@ -13,7 +13,7 @@ const Home = () => {
             <div className="Container">
                 <h1 className="Hello"> Hello </h1>
                 <h2> Welcome to the Store !</h2>
-                <Link to="Shop" id="Shop" className="shop-now-btn"> Shop Now !</Link>
+                <Link to="Shop" className="shop-now-btn"> Shop Now !</Link>
             </div>
             <img className="Header" src={Header} alt="Failed to Load :(" />
             {/* <img className="Header" src={Main} alt="Failed to Load :(" /> */}

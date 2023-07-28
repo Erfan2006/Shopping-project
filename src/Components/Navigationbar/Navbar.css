@@ -80,7 +80,7 @@
     cursor: pointer;
   }
 
-  .Navbar .MobileNavigation .cart{
+  .Navbar .MobileNavigation {
     position: absolute;
     margin-right: 200px;
   }
@@ -103,6 +103,9 @@
 
     padding-left: 435px;
   }
+  .title-medium{
+    left: 200px;
+  }
   .title{
     left: 400px;
     margin-top: -15px;
@@ -123,9 +126,21 @@
 
 
   @media screen and (max-width: 767px) {
-    /* start of medium tablet styles */
+    
+    .Home .Header{
+      width: 420px;
+    }
     
     }
+
+
+    @media screen and (max-width: 479px) {
+      
+      .Hello h1{
+        font-size: 20px;
+      }
+      
+      }
 
   
   

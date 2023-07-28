@@ -19,6 +19,7 @@ const MobileNavigation = () => {
             {open ? closeIcone : hamburgerIcone}
             {open && <NavLinks isMobile={true} CloseMobileMenu={CloseMobileMenu} />}
             {open ? closeIcone : hamburgerIcone}
+            
         </nav> 
     );
 }

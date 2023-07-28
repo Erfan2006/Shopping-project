@@ -9,10 +9,10 @@ const NavLinks = (props) => {
     const animateTo = {opacity: 1, y: 0}
     return ( 
 
+
+
 <div>
-
-<h3 className='title'>Shopping Center</h3>
-
+  <div><h3 className='title'>Shopping Center</h3></div>
     <ul>
 
         <motion.li

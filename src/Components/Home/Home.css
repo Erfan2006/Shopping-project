@@ -52,22 +52,22 @@ h2{
 
 
 .shop-now-btn {
-    display: inline-block;
-    padding: 10px 20px;
     margin-left: 200px;
-    background-color: #a50d0d;
-    color: #fff;
-    text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-style: bold;
+    background-color: #2898ac;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
   }
   
   .shop-now-btn:hover {
-    background-color: rgb(247, 27, 27);
-    box-shadow: none;
+    background-color: rgb(10, 105, 85);
+    box-shadow: darkblue;
   }
   
 
@@ -78,18 +78,17 @@ h2{
     .Home{
         background-color: rgb(244, 255, 251);
         display: flex;
-        height: 630px;
-        width: 962px;
+        height: 480px;
+        width: 600px;
         padding-top: 85px;
         position: relative;
-        border-bottom: 3px solid black;
+        
     }
-
     .Home .Header{
-        height: 600px;
-        left: 17%;
+        height: 430px;
+        left: 33%;
+        
     }
-
     .Home h1{
 
         padding-left: 0.1%;
@@ -100,6 +99,7 @@ h2{
         font-size: 40px;
         
     }
+    
 
     .Home h2{
 
@@ -107,24 +107,35 @@ h2{
         font-size: 32px;
     }
 
+    .shop-now-btn {
+        margin-left: 0.5px;
+    }
 
-
-    @media screen and (max-width: 918px) {
-        
-        .Home{
-            background-color: rgb(250, 255, 253);
-            display: flex;
-            height: 600px;
-            padding-top: 85px;
-            position: relative;
-            border-bottom: 3px solid black;
-        }
-
-        
         }
         
         @media screen and (max-width: 767px) {
-        /* start of medium tablet styles */
+        
+            .Home .Header{
+                height: 300px;
+                left: 33%;
+                
+            }
+
+            .Home .Container{
+                top: 30%;
+            }
+
+            .Home .Container h2{
+                font-size: 23px;
+            }
+
+            .shop-now-btn{
+                padding: 6px 25px;
+                font-size: 16px;
+            }
+
+
+            
         
         }
         
@@ -134,4 +145,4 @@ h2{
         }
 
 
-}
+
