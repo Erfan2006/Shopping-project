@@ -1,24 +1,24 @@
-import "./Home.css"
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
-
-import Header from './../images/main-1.svg'
-// import Main from './../../images/main-2.svg'
-
+import "./Home.css";
+import Mainimg from "./../images/main-1.jpg"
 
 
 const Home = () => {
-    return ( 
-
-        <div className="Home"> 
-            <div className="Container">
-                <h1 className="Hello"> Hello </h1>
-                <h2> Welcome to the Store !</h2>
-                <Link to="Shop" className="shop-now-btn"> Shop Now !</Link>
-            </div>
-            <img className="Header" src={Header} alt="Failed to Load :(" />
-            {/* <img className="Header" src={Main} alt="Failed to Load :(" /> */}
+  return (
+    <div className="Home">
+      <div className="Container">
+        <div className="Content">
+          <div className="Text">
+            <h1>STEP UP</h1>
+            <h2>Do not miss the offers!</h2>
+            <button class="shop-now-button">Shop Now</button>
+          </div>
+          <div className="Image">
+            <img src={Mainimg} alt="First pic" />
+          </div>
         </div>
-     );
+      </div>
+    </div>
+  );
 }
  
 export default Home;

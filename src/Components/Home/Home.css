@@ -1,148 +1,129 @@
-.Home{
-    background-color: rgb(250, 255, 253);
-    display: flex;
-    height: 800px;
-    padding-top: 85px;
-    position: relative;
+.Home {
 
+  display: flex;
+  justify-content: center;
+  background-color: #D5D5D5;
 }
 
-.Home .Container h1{
-    margin: 0;
+.Container {
+  margin: 0 auto;
 }
 
-
-.Home .Container{
-
-    left: 2%;
-    position: absolute;
-    top: 35%;
-    color: black;
+.Content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px;
 }
 
-
-.Home .Container .Hello{
-
-    font-size: 85px;
-    padding-right: 20%;
-
+.Text {
+  flex-basis: 50%;
+  max-width: 500px;
+  text-align:center;
+  font-size: 24px;
 }
 
-
-h1{
-
-    padding-left: 205px;
-
+.Image {
+  flex-basis: 50%;
+  max-width: 500px;
+  margin-top: 20px;
+  text-align: center;
 }
 
-h2{
-    
-    padding-left: 200px;
-    font-size: 45px;
-}
-
-.Home .Header{
-
-    position: absolute;
-    height: 743px;
-    right: 5%;
-    top: 16.5%;
+.Image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 600px; /* Add a max-height to prevent the image from overflowing */
 }
 
 
+/* Button */
 
-.shop-now-btn {
-    margin-left: 200px;
-    font-size: 18px;
-    padding: 10px 35px;
-    text-decoration: none;
-    font-style: bold;
-    background-color: #2898ac;
-    color: white;
-    border-radius: 10px;
+
+.shop-now-button {
+    width: 30%;
+    background-color: #050505;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
   }
   
-  .shop-now-btn:hover {
-    background-color: rgb(10, 105, 85);
-    box-shadow: darkblue;
+  .shop-now-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #D5D5D5;
+    transform: translate(-5%, -10%);
+    transition: width 0.3s ease, height 0.3s ease;
   }
   
-
-
-@media (max-width : 991px) {
-
-
-    .Home{
-        background-color: rgb(244, 255, 251);
-        display: flex;
-        height: 480px;
-        width: 600px;
-        padding-top: 85px;
-        position: relative;
-        
+  .shop-now-button:hover::before {
+    width: 200%;
+    height: 200%;
+    animation: pulse 1s ease-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(240, 2, 2, 0.7);
     }
-    .Home .Header{
-        height: 430px;
-        left: 33%;
-        
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
     }
-    .Home h1{
-
-        padding-left: 0.1%;
+  
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
     }
+  }
 
-    .Home .Container .Hello{
 
-        font-size: 40px;
-        
-    }
+@media only screen and (max-width: 768px) {
+  .Content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Text,
+  .Image {
+    flex-basis: 100%;
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .shop-now-button{
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Text {
+    font-size: 36px;
+  }
+
+  .Image {
+    max-width: 600px;
+  }
+
+  .Image img {
+    max-height: 800px; /* Increase the max-height for desktop view */
+  }
+}
+
+
+
+  
     
-
-    .Home h2{
-
-        padding-left: 0.1px;
-        font-size: 32px;
-    }
-
-    .shop-now-btn {
-        margin-left: 0.5px;
-    }
-
-        }
-        
-        @media screen and (max-width: 767px) {
-        
-            .Home .Header{
-                height: 300px;
-                left: 33%;
-                
-            }
-
-            .Home .Container{
-                top: 30%;
-            }
-
-            .Home .Container h2{
-                font-size: 23px;
-            }
-
-            .shop-now-btn{
-                padding: 6px 25px;
-                font-size: 16px;
-            }
-
-
-            
-        
-        }
-        
-        @media screen and (max-width: 479px) {
-        /* start of phone styles */
-        
-        }
-
-
-

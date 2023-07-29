@@ -12,7 +12,7 @@ const NavLinks = (props) => {
 
 
 <div>
-  <div><h3 className='title'>Shopping Center</h3></div>
+  <div><h3 className='title'>STEP UP</h3></div>
     <ul>
 
         <motion.li

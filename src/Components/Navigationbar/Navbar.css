@@ -1,20 +1,17 @@
 
 
-.title{
+.title {
   position: absolute;
   left: 120px;
   font-size: 20px;
 }
 
-
-.cart{
+.cart {
   position: fixed;
   right: 150px;
 }
 
-
-.Navbar nav ul{
-
+.Navbar nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -22,26 +19,20 @@
 }
 
 .Navbar nav ul li {
-
   display: inline-block;
   margin: 20px;
-  
 }
 
-.Navbar a{
+.Navbar a {
   text-decoration: none;
   margin-right: 5px;
 }
 
-
-.Navbar a:hover{
-
+.Navbar a:hover {
   border-bottom: solid rgb(111, 228, 212);
-
 }
 
-
-.Navbar{
+.Navbar {
   background-color: rgb(240, 234, 234);
   border-bottom: 2px solid rgb(221, 211, 211);
   height: 80px;
@@ -52,18 +43,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-
-.Navbar .MobileNavigation{
+.Navbar .MobileNavigation {
   display: none;
 }
 
-@media (max-width: 990px){
-  .Navbar .Navigation{
-    display: none;
 
+
+@media screen and (max-width: 990px) {
+  /* Hide the desktop navigation */
+  .Navbar .Navigation {
+    display: none;
   }
 
 
@@ -73,21 +64,29 @@
     align-items: center;
   }
 
-  .Navbar .MobileNavigation .Hamburger{
 
+
+
+  .Hamburger {
+    position: absolute;
+    top: 20px;
+    left: 155px;
+    cursor: pointer;
+  }
+
+  .Navbar .MobileNavigation .Hamburger {
     position: absolute;
     margin-left: 280px;
     cursor: pointer;
   }
 
-  .Navbar .MobileNavigation {
+
+  .Navbar .MobileNavigation .cart {
     position: absolute;
     margin-right: 200px;
   }
 
-  /* Custom the Hamburger menu  */
-
-  .Navbar nav ul {  
+  .Navbar nav ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -98,51 +97,102 @@
     border-top: 2px solid white;
   }
 
-
   .Navbar nav ul li {
-
     padding-left: 435px;
   }
-  .title-medium{
-    left: 200px;
-  }
-  .title{
+
+
+  .title {
     left: 400px;
     margin-top: -15px;
   }
 
-  .Navbar{
+
+  .Navbar {
     opacity: 1;
   }
 
-  
-  /* hover a tag */
 
-  .Navbar a:hover{
-
+  .Navbar a:hover {
     border-bottom: none;
-    color: #000000 ;
+    color: #000000;
   }
 
+  /* Media queries for even smaller screens */
 
-  @media screen and (max-width: 767px) {
-    
-    .Home .Header{
-      width: 420px;
+
+  @media  screen and (max-width: 985px) {
+
+    .Hamburger {
+      position: absolute;
+      top: 20px;
+      left: 400px;
+      cursor: pointer;
     }
     
+  }
+
+  @media screen and (max-width: 767px) {
+    /* Adjust the position of the hamburger menu */
+    .Navbar .MobileNavigation {
+      left: 200px;
+    }
+
+    .Hamburger {
+      position: absolute;
+      top: 20px;
+      left: 250px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 610px){
+      
+      .Hamburger{
+        position: absolute;
+        top: 20px;
+        left: 200px;
+        cursor: pointer;
+      }
+
+      .Navbar nav ul li {
+        padding-left: 200px;
+      }
+
+      .title{
+        left: 110px;
+      }
+
+
+
+    }
+
+    @media screen and (max-width: 545px){
+      
+      .Hamburger{
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        cursor: pointer;
+      }
     }
 
 
     @media screen and (max-width: 479px) {
       
-      .Hello h1{
-        font-size: 20px;
+      .Hamburger{
+        position: absolute;
+        top: 20px;
+        left: 70px;
+        cursor: pointer;
       }
       
       }
 
-  
-  
+    
 
+
+    
+
+
+  }
 }
