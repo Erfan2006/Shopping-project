@@ -1,118 +1,57 @@
-.About__Center{
-
-    background-color: rgb(255, 255, 255);
-    /* display: flex; */
-    height: 700px;
-    padding-top: 85px;
-
-    
-}
-
-h1{
-    font-size: 60px;
-    font-family: 'Lilita One', cursive;
-    
-}
-
-.col_1{
-
-    height: 800px;
-    left: 50%;
+.About__Center {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-content: flex-start;
-    width: 50%;
-    float: left;
-}
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-.col_1 img{
-
-    height: 662px;
-    padding-left: 80px;
-}
-
-
-/* .col_2{
-
-    height: 800px;
-    left: 50%;
+  .Container--About {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: right; 
-    align-content: flex-end;
-    width: 50%;
-    float: right;
-} */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
 
 
-.col_2 h2{
-    font-size: 27px;
-    right: 50%;
-    justify-content: right;
-    margin-right: 0;
-    padding-right: 0;
+  .col_1 {
+    margin-top: 40px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .About-us-title {
+    font-size: 24px;
+    margin-top: 500px;
+  }
+  
+  .col_2 {
+    margin-top: 50px;
+    max-width: 800px;
+  }
+  
+  .col_2 h2 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  @media screen and (max-width: 768px) {
 
-}
+    .About-us-title {
+        font-size: 24px;
+        margin-bottom: 1000px;
 
-@media screen and (max-width: 991px) {
-    h1{
-        font-size: 40px;
-        font-family: 'Lilita One', cursive;   
+      }
+
+
+    h1 {
+      font-size: 28px;
     }
-    .About__Center{
-        height: 380px;
-
+  
+    h2 {
+      font-size: 16px;
     }
-    .col_1 img{
-        display: flex;
-        height: 356px;
-        padding-left: 0.1px;
-
-    }    
-    .col_2 h2{
-        font-size: 16px; 
- 
-    }
-        
-
-    }
-    
-    @media screen and (max-width: 767px) {
-        
-        .col_1 h1{
-            font-size: 40px;
-            font-family: 'Lilita One', cursive;   
-            padding-left: 400px;
-            
-        }
-        .About__Center{
-            height: 380px;
-           
-        }
-        .col_1 img{
-            display: flex;
-            height: 355px;
-            padding-left: 0.1px;
-    
-        }    
-        .col_2 h2{
-            font-size: 16px; 
-     
-        }
-
-        
-        
-    
-    }
-    
-    @media screen and (max-width: 479px) {
-    /* start of phone styles */
-    
-    }
-        
-
-
+  }

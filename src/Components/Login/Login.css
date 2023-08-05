@@ -1,6 +1,8 @@
 body{
 
     background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -16,6 +18,7 @@ body{
 
     width: 50%;
     float: left;
+  
 }
 
 .signin-form{
@@ -270,9 +273,14 @@ input:focus ~ .highlight {
   @media only screen and (max-width: 768px) {
 
 
+    .body{
+      margin: 0;
+    }
+
     .signin-image{
       display: none;
     }
+
 
     .facebook-button {
       font-size: 14px;
@@ -287,77 +295,4 @@ input:focus ~ .highlight {
       margin-left: 200px;
     }
   }
-  
-  /* @media only screen and (max-width: 768px) {
-
-
-    .signin-image{
-      display: none;
-    }
-
-    .google-button {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  
-    .google-button img {
-      height: 20px;
-    }
-  } */
-  
-
-
-
-  /* @media screen and (max-width: 991px) {
-
-
-    .signin-image{
-      display: none;
-    }
-    .signin-form{
-      width: 100%;
-    }
-    .form-title{
-      width: 100%;
-    }
-    .Login-form{
-      width: 100%;
-    }
-    .socials{
-      width: 100%;
-    }
-    .btn-google{
-      position: fixed;
-      width: 20%;
-      height: 24px;
-      margin-left: 390px;
-
-    }
-    .btn-facebook{
-      position: fixed;
-      width: 20%;
-      height: 24px;
-      margin-left: 475px;
-    }
-    .sign-up-massage{
-      width: 100%;
-      margin-top: 150px;
-    }
-    }
-    
-    @media screen and (max-width: 767px) {
-
-      
-      
-    }
-    
-    @media screen and (max-width: 479px) {
-
-    
-    }
-
-  
-  
- */
-
   
